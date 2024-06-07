@@ -10,18 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PROVAGS"
-        tools:targetApi="31">
+    android:theme="@style/Theme.AppCompat.Light"
+
+    tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PROVAGS">
+            android:theme="@style/Theme.AppCompat.Light"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+
+            android:name=".IntegrantesActivity"
+
+            android:exported="true"  >
+
         </activity>
     </application>
 

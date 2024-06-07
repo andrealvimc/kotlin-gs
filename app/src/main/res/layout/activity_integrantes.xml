@@ -9,27 +9,50 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Integrantes"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="304dp"
+        android:text="RM93120 - ANDRÉ ALVIM"
         android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="16dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome: [Seu Nome]"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="176dp"
+        android:text="RM93393 - THIAGO SAUTNER"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="356dp"
+        android:text="RM93388 - GABRIEL SAUTNER"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
         android:layout_marginTop="8dp"
+        android:text="Nome: [Seu Nome]"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         tools:ignore="UnknownIdInLayout" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RM: [Seu RM]"
-        app:layout_constraintTop_toBottomOf="@+id/tvNome"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="196dp"
         android:layout_marginTop="8dp"
+        android:text="RM: [Seu RM]"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNome"
         tools:ignore="UnknownId" />
 </androidx.constraintlayout.widget.ConstraintLayout>

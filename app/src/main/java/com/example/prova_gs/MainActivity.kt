@@ -19,9 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prova_gs.ui.theme.PROVAGSTheme
 
-
-
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
 
     private lateinit var etNomePraia: EditText
     private lateinit var etCidade: EditText
@@ -32,6 +30,8 @@ class MainActivity : AppCompatActivity() {
     private val praias = mutableListOf<Praia>()
     private lateinit var btnIntegrantes: Button
 
+
+    @Override()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         etEstado = findViewById(R.id.etEstado)
         btnIncluir = findViewById(R.id.btnIncluir)
         recyclerViewPraias = findViewById(R.id.recyclerViewPraias)
+
 
         praiaAdapter = PraiaAdapter(praias) { position ->
             praias.removeAt(position)
@@ -74,9 +75,10 @@ class MainActivity : AppCompatActivity() {
             etEstado.text.clear()
 
 
+
             btnIntegrantes = findViewById(R.id.btnIntegrantes)
             btnIntegrantes.setOnClickListener {
-                val intent = Intent(this, IntegrantesActivity::class.java)
+                val intent = Intent(this, IntegrantesActivity::class.java) // Assuming IntegrantesActivity exists
                 startActivity(intent)
             }
         }
